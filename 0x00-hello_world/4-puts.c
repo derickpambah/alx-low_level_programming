@@ -1,14 +1,15 @@
 #include<stdio.h>
 /**
- * puts() - Output characters and strings
- * @myChar: character string variable
+ * main - Entry point to the main program
  *
+ * Description: main allows entry to the
+ * main program in C
  * Return: 0 (Success)
  */
-int main()
+int main(void)
 {
 	char myChar[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(myChar);
-	return 0;
+	return (0);
 }
