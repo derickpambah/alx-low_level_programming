@@ -1,2 +1,2 @@
 #!/bin/bash
-as $CFILE -o
+as $CFILE -o $CFILE.O
