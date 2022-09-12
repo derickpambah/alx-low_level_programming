@@ -45,7 +45,7 @@ int main(void)
 				prin_t(n);
 				prin_t2(m);
 
-				if(n != 8 || (n == 8 && m != 9))
+				if (n != 8 || (n == 8 && m != 9))
 				{
 					putchar(44);
 					putchar(32);
