@@ -10,5 +10,6 @@ int _abs(int)
 	int c;
 
 	if (c == '-')
-		return (c = -c);
+		c = -c;
+	return c;
 }
