@@ -5,10 +5,8 @@
  * Return: Absolute value of an integer
  */
 
-int _abs(int)
+int _abs(int c)
 {
-	int c;
-
 	if (c == '-')
 		c = -c;
 	return c;
