@@ -13,11 +13,7 @@ void jack_bauer(void)
 
 	for (n = 0; n <= 2; n++)
 	{
-		if (n == 2 && m == 3)
-		{
-			break;
-		}
-		else
+		if ((n != 2 && m != 3) && (p != 5 && t != 9))
 		{
 			for (m = 0; m <= 9; m++)
 			{
@@ -34,6 +30,10 @@ void jack_bauer(void)
 					}
 				}
 			}
+		}
+		else
+		{
+			break;
 		}
 	}
 }
