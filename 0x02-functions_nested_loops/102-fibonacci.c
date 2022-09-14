@@ -12,7 +12,8 @@ int main(void)
 {
 	int n1 = 1;
 	int n2 = 2;
-	int i, n3;
+	int i;
+	long int n3;
 
 	printf("%d, %d, ", n1, n2);
 
@@ -21,14 +22,14 @@ int main(void)
 		if (i != 49)
 		{
 			n3 = n1 + n2;
-			printf("%u, ", n3);
+			printf("%lu, ", n3);
 			n1 = n2;
 			n2 = n3;
 		}
 		else
 		{
 			n3 = n1 + n2;
-			printf("%u", n3);
+			printf("%lu", n3);
 		}
 	}
 	return (0);
