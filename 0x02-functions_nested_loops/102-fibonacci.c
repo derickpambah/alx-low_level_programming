@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Description: Print first 50 fibonacci numbers starting from 1 and 2
  * Return: First 50 fibonacci numbers
  */
@@ -19,9 +19,7 @@ int main(void)
 	for (i = 2; i < 50; i++)
 	{
 		n3 = n1 + n2;
-
-		if (i < 49)
-			printf("%d, ", n3);
+		printf("%d, ", n3);
 		n1 = n2;
 		n2 = n3;
 	}
