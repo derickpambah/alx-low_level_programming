@@ -22,14 +22,16 @@ int main(void)
 		if (i != 49)
 		{
 			n3 = n1 + n2;
-			printf("%lu, ", n3);
+			_putchar('0' + n3);
+			_putchar(44);
+			_putchar(32);
 			n1 = n2;
 			n2 = n3;
 		}
 		else
 		{
 			n3 = n1 + n2;
-			printf("%lu", n3);
+			_putchar('0' + n3);
 		}
 	}
 	return (0);
