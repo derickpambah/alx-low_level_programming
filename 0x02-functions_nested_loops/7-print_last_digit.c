@@ -6,11 +6,11 @@
  * Return: Last digit
  */
 
-int print_last_digit(int c)
+int print_last_digit(long int c)
 {
 	if (c < 0)
 		c = -c;
-	
+
 	c = c % 10;
 	_putchar('0' + c);
 
