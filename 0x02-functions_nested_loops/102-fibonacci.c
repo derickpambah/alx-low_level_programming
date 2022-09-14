@@ -21,14 +21,16 @@ int main(void)
 		if (i != 49)
 		{
 			n3 = n1 + n2;
-			printf("%lld, ", n3);
+			printf("%u, ", n3);
 			n1 = n2;
 			n2 = n3;
 		}
 		else
 		{
 			n3 = n1 + n2;
-			printf("%lld", n3);
+			printf("%u", n3);
+			n1 = n2;
+			n2 = n3;
 		}
 	}
 	return (0);
