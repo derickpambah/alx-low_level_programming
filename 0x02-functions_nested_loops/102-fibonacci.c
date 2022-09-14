@@ -14,16 +14,14 @@ int main(void)
 	int n2 = 2;
 	int i, n3;
 
-	for (i = 3; i < 50; i++)
+	printf("%d, %d, ", n1, n2);
+
+	for (i = 2; i < 50; i++)
 	{
 		n3 = n1 + n2;
-		printf("%d", n1);
-		_putchar(',');
-		_putchar(' ');
-		printf("%d", n2);
-		_putchar(',');
-		_putchar(' ');
-		printf("%d", n3);
+
+		if (i < 49)
+			printf("%d, ", n3);
 		n1 = n2;
 		n2 = n3;
 	}
