@@ -11,10 +11,12 @@ int _isupper(int c)
 	for (c = 'A'; c <= 'Z'; c++)
 	{
 		_putchar(c);
+		_putchar(':');
 		_putchar(' ');
 		return (1);
 	}
 	_putchar(c);
+	_putchar(':');
 	_putchar(' ');
 	return (0);
 }
