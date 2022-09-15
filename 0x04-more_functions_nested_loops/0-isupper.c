@@ -8,8 +8,9 @@
 
 int _isupper(int c)
 {
+	int ans;
+
 	for (c = 'A'; c <= 'Z'; c++)
 		return (1);
-	else
-		return (0);
+	return (0);
 }
