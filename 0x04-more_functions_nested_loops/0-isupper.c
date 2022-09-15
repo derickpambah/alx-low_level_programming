@@ -11,6 +11,12 @@ int _isupper(int c)
 	int ans;
 
 	for (c = 'A'; c <= 'Z'; c++)
+	{
+		_putchar(c);
+		_putchar(' ');
 		return (1);
+	}
+	_putchar(c);
+	_putchar(' ');
 	return (0);
 }
