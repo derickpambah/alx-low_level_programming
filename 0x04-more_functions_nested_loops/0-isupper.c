@@ -8,8 +8,6 @@
 
 int _isupper(int c)
 {
-	int ans;
-
 	for (c = 'A'; c <= 'Z'; c++)
 	{
 		_putchar(c);
