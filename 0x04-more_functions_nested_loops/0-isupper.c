@@ -19,6 +19,7 @@ int _isupper(int c)
 	_putchar(':');
 	_putchar(' ');
 	_putchar('0');
+	_putchar('\n');
 
 	return (0);
 }
