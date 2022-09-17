@@ -15,7 +15,7 @@ void print_line(int n)
 
 	for (c = '0'; c <= limit; c++)
 	{
-		if (c < 0 || c == 0)
+		if (limit < 0 || limit == 0)
 			_putchar('\n');
 		_putchar(95);
 	}
