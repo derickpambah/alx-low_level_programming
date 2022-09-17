@@ -9,8 +9,11 @@
 void print_line(int n)
 {
 	int c;
+	int limit;
 
-	for (c = '0'; c <= n; c++)
+	limit = (n + '0');
+
+	for (c = '0'; c <= limit; c++)
 	{
 		if (c < 0 || c == 0)
 			_putchar('\n');
