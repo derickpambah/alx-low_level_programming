@@ -8,13 +8,21 @@
 
 void print_line(int n)
 {
-	int c;
+	char c;
+	char m;
 
-	for (c = '1'; c <= n; c++)
+	for (c = 0; c <= n; c++)
 	{
-		if (n < 0 || n == 0)
+		m = c;
+		if (n <= 0)
 			_putchar('\n');
-		_putchar(95);
+
+		if (n > 9)
+		{
+			_putchar('1');
+			m = (n % 10);
+		}
+		_putchar('_' * m);
 	}
 	_putchar('\n');
 }
