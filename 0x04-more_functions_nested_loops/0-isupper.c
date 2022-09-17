@@ -8,18 +8,8 @@
 
 int _isupper(int c)
 {
-	for (c = 'A'; c <= 'Z'; c++)
-	{
-		_putchar(c);
-		_putchar(':');
-		_putchar(' ');
-		_putchar('1');
-	}
-	_putchar(c);
-	_putchar(':');
-	_putchar(' ');
-	_putchar('0');
-	_putchar('\n');
+	if (c >= 65 && c <= 90)
+		return (1);
 
 	return (0);
 }
