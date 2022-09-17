@@ -17,12 +17,7 @@ void print_line(int n)
 		if (n <= 0)
 			_putchar('\n');
 
-		if (n > 9)
-		{
-			_putchar('1');
-			m = (n % 10);
-		}
-		_putchar('_' * m);
+		_putchar('_' * (m + '0'));
 	}
 	_putchar('\n');
 }
