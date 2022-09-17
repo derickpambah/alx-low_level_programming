@@ -9,17 +9,25 @@
 
 int _isdigit(int c)
 {
-	for (c = '0'; c <= '9'; c++)
+	int n;
+
+	for (n = '0'; n <= '9'; n++)
 	{
-		_putchar(c);
-		_putchar(':');
-		_putchar(' ');
-		_putchar('1');
+		if (n == c)
+		{
+			_putchar(c);
+			_putchar(':');
+			_putchar(' ');
+			_putchar('1');
+		}
+		else
+		{
+			_putchar(c);
+			_putchar(':');
+			_putchar(' ');
+			_putchar(0);
+		}
 	}
-	_putchar(c);
-	_putchar(':');
-	_putchar(' ');
-	_putchar(0);
 
 	return (0);
 }
