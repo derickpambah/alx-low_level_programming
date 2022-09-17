@@ -9,25 +9,7 @@
 
 int _isdigit(int c)
 {
-	int n;
-
-	for (n = '0'; n <= '9'; n++)
-	{
-		if (n == c)
-		{
-			_putchar(c);
-			_putchar(':');
-			_putchar(' ');
-			_putchar('1');
-		}
-		else
-		{
-			_putchar(c);
-			_putchar(':');
-			_putchar(' ');
-			_putchar(0);
-		}
-	}
-
+	if (c >= 0 && c <= 9)
+		return (1);
 	return (0);
 }
