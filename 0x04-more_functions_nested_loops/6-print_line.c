@@ -9,13 +9,10 @@
 void print_line(int n)
 {
 	int c;
-	int limit;
 
-	limit = (n + '0');
-
-	for (c = '0'; c <= limit; c++)
+	for (c = '1'; c <= n; c++)
 	{
-		if (limit < 0 || limit == 0)
+		if (n < 0 || n == 0)
 			_putchar('\n');
 		_putchar(95);
 	}
