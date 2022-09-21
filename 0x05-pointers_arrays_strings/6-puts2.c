@@ -10,11 +10,10 @@ void puts2(char *str)
 {
 	char *s = str;
 	int count = 0;
+	int n = 0;
 
 	while (*(s + 1) != '\0')
 	{
-		int n;
-
 		if ((n >= 0 && n <= count) && (n / 2 == 0))
 		{
 			char ch = (char) *str;
