@@ -13,12 +13,10 @@ void puts2(char *str)
 
 	while (*(s + 1) != '\0')
 	{
-		char ch;
-
 		if (count / 2 == 0)
 		{
-			ch = (char) str;
-			_putchar(str);
+			char ch = (char) *str;
+			_putchar(ch);
 		}
 		count++;
 		s++;
