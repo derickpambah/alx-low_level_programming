@@ -1,23 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - return the length of a string
- * @s: String
- *
- * Return: int (length of a string)
- */
-int _strlen(char *s)
-{
-	int count = 0;
-
-	while (*(s + count) != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
-
-/**
  * print_rev - Print a string in reverse
  * @s: String
  *
@@ -25,24 +8,15 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-	int length, i;
-	char *begin, *end, ch;
+	char *str_ptr = s;
 
-	length = _strlen(s);
+	while (*(str_ptr + 1) != '\0')
+		str_ptr++;
 
-	begin = s;
-	end = s;
-
-	for (i = 0; i < (length - 1); i++)
-		end++;
-
-	for (i = 0; i < (length / 2); i++)
+	while (str_ptr > s)
 	{
-		ch = *end;
-		*end = *begin;
-		*begin = ch;
-
-		begin++;
-		end--;
+		char temp = *str_ptr;
+		*str_ptr-- = *s;
+		*s++ = temp;
 	}
 }
