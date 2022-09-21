@@ -14,7 +14,7 @@ void puts2(char *str)
 
 	while (*(s + 1) != '\0')
 	{
-		for (n = 0; n <= count; n += 2)
+		if ((n >= 0 && n <= count) && (n / 2 == 0))
 		{
 			char ch = (char) *str;
 
