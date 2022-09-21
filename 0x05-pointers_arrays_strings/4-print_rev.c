@@ -13,6 +13,6 @@ void print_rev(char *s)
 		char ch = (char) *s;
 
 		_putchar(ch);
-		--s;
+		s--;
 	}
 }
