@@ -13,6 +13,6 @@ void print_array(int *a, int n)
 	int *tmp = a[n];
 
 	a[n] = '\0';
-	printf("%s, ", a);
+	printf("%d, ", a);
 	a[n] = temp;
 }
